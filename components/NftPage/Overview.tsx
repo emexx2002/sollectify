@@ -38,7 +38,7 @@ const Price = ({ price }) => {
 }
 
 
-const Overview = ({ id, title, creator, _ownerToken, collection, details, likes , price}) => {
+const Overview = ({ id, title, creator, _ownerToken, collection, details, likes}) => {
 
 	const { isConnected } = useWallet()
 	const [price, setPrice] = useState(-1)
@@ -54,7 +54,7 @@ const Overview = ({ id, title, creator, _ownerToken, collection, details, likes 
 		<Card withHeader={false} >
 			<h1 style={{ fontSize: '2rem' }} className='font-semibold text-black dark:text-white' >{title}</h1>
 
-			<h1 className='mb-8 font-raleway font-medium text-dark-8 dark:text-white' >Current Price: <Price price={price} /></h1>
+			<h1 className='mb-8 font-raleway font-medium text-dark-8 dark:text-white' >Current Price: <Price /></h1>
 			
 			<div className='w-full flex flex-wrap items-center justify-between' >
 				<div>
