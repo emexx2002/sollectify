@@ -38,7 +38,7 @@ const Price = ({ price }) => {
 }
 
 
-const Overview = ({ id, title, creator, _ownerToken, collection, details, likes }) => {
+const Overview = ({ id, title, creator, _ownerToken, collection, details, likes , price}) => {
 
 	const { isConnected } = useWallet()
 	const [price, setPrice] = useState(-1)
