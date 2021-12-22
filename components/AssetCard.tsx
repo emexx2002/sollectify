@@ -21,7 +21,7 @@ const Card = (nft: AssetInterface) => {
                 <div className='mx-4 my-6' >
                     <h3 className='sm:text-xs text-sm font-normal text-dark-2 dark:text-white' >{data.creator.name}</h3>
                     <h2 className='sm:text-base text-lg font-semibold text-dark-2 dark:text-white' >
-                        {data.title} <span className='text-sm font-medium' >#{data.collection}</span>
+                        {data.title} <span className='text-sm font-medium' >#{data.collections}</span>
                     </h2>
                     <div className='flex justify-between items-center mt-8' >
                         <h4 className='font-bold text-pink dark:text-extra-1' >
